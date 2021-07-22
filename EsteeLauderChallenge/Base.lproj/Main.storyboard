@@ -54,7 +54,7 @@
         <!--View Controller-->
         <scene sceneID="Bnb-yE-T5F">
             <objects>
-                <viewController id="ayO-vh-s19" sceneMemberID="viewController">
+                <viewController id="ayO-vh-s19" customClass="ViewController" customModule="EsteeLauderChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9sT-3q-OBc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -68,20 +68,107 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="ecre"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVI-wh-7d2">
+                                <rect key="frame" x="355" y="388" width="33" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="›">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="72a-sS-UAk" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="UJL-wF-5Re"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LK8-Ne-Py4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5wn-Pq-rC0"/>
+                    <connections>
+                        <outlet property="bgImage" destination="T6b-r3-2fc" id="w5t-H2-3qt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bD2-nj-hLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="140.625"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="PEz-rn-Ld3">
+            <objects>
+                <viewController id="72a-sS-UAk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fSw-xQ-B0d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_3" translatesAutoresizingMaskIntoConstraints="NO" id="JwQ-gL-J5R">
+                                <rect key="frame" x="-385" y="4" width="1130" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKn-7Q-sjB">
+                                <rect key="frame" x="20" y="699" width="375" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="sandbar"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHC-2b-Dhd">
+                                <rect key="frame" x="355" y="388" width="33" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="›">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKC-wo-b02">
+                                <rect key="frame" x="20" y="394" width="33" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <state key="normal" title="‹">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ayO-vh-s19" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="KKz-Po-CRc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eR1-1i-gXp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gG9-TD-TIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718.840579710145" y="34.821428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Mm-aq-be2">
+            <objects>
+                <viewController id="pXY-xJ-4ch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KFB-gU-4aE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EL_11" translatesAutoresizingMaskIntoConstraints="NO" id="qio-TM-tPu">
+                                <rect key="frame" x="-632" y="0.0" width="1677" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Xo7-At-RqG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHe-c8-bTW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2739.130434782609" y="50.223214285714285"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="KKz-Po-CRc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="EL_1 1" width="1242" height="2688"/>
+        <image name="EL_11" width="1080" height="1080"/>
+        <image name="EL_3" width="1080" height="1080"/>
         <image name="Group 1 (1)" width="867" height="276"/>
         <image name="bg1" width="1242" height="2688"/>
         <image name="ecre" width="1104" height="414"/>
+        <image name="sandbar" width="1104" height="414"/>
     </resources>
 </document>
